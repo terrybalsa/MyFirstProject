@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="感謝您對本公司的支持與愛護!\n 誠摯邀請您提供意見以及優良表揚\n成為我們提昇服務品質的動力。"
+        android:id="@+id/txtthx"
+        android:textSize="25dp"
+        android:editable="false"
+        android:layout_weight="0.14" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="姓名:"
+            android:layout_weight="0.00"
+            android:textSize="40dp"
+            android:id="@+id/txtname" />
+
+        <EditText
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtName"
+
+            android:layout_weight="0.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="性別:"
+            android:textSize="40dp"
+            android:id="@+id/txtgender" />
+
+        <RadioGroup
+            android:layout_width="167dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="男"
+                android:textSize="25dp"
+                android:id="@+id/radioboy"
+                android:checked="false"
+                android:layout_weight="0.29" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="女"
+                android:textSize="25dp"
+                android:id="@+id/radiogirl"
+                android:checked="false"
+                android:layout_weight="0.25" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="意見內容:"
+        android:textSize="40dp"
+        android:id="@+id/txtfeedback"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtText"
+        android:layout_weight="0.56" />
+
+    <Button
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:text="送出"
+        android:id="@+id/btnset"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11" />
+
+</LinearLayout>
